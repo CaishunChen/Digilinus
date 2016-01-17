@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+open (UPTIME, "uptime|" || die "cannot do that...");
+$_ = <UPTIME>;
+close(UPTIME);
+
+($s, $s, $time, $s) = split( " ", $_);
+
+print "\nUptime for this computer: $time\n\n";
+

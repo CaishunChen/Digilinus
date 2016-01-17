@@ -1,0 +1,12 @@
+./Digilinus.py:75: Warning: Table 'DigiTable' already exists
+  InTemp float(3,1) NOT NULL)")
+Database connected
+Table defined:  DigiTable
+ -----------------------------------------------------
+  Defined sensors  
+  OutTemp   /mnt/1wire/28.571AB8010000/temperature
+  InTemp    /mnt/1wire/28.7EF3FE000000/temperature
+ -----------------------------------------------------
+
+  Date                     |   Sensor  |   Temperature
+ -----------------------------------------------------

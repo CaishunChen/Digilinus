@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+open (FORTUNE, "/usr/games/fortune|" || die "cannot do that...");
+@fortune = <FORTUNE>;
+close(FORTUNE);
+
+print "Content-type: text/html\n\n";
+
+#($s, $s, $days, $s) = split( " ", $_);
+
+foreach (@fortune)
+{
+print "<pre>\n";
+	print "$_";
+print "</pre>\n";
+}
